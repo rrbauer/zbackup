@@ -38,3 +38,8 @@ Lesser note: I use this on Linux Mint, a derivative of Ubuntu, which is a deriva
 to all the developers over the years who have made these amazing distributions.
 
 I don't know if it will work for you. #itworksforme lol. Give it a try!
+
+Lastly, this is still in the very early stages of development. It needs error checking/handling. It
+needs more backup options besides user home directories. And probably more, but I want to keep it
+as simple as possible.
+
