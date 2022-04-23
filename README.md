@@ -1,6 +1,5 @@
 # zbackup
-Simple backup utility utilizing luks, zfs and snapshots.
-Must be run as root (sudo)
+Simple backup utility utilizing luks, zfs and snapshots. Must be run as root (sudo)
 
 Dependencies:
 1. zfsutils-linux
