@@ -1,5 +1,5 @@
 # zbackup
-Simple backup utility utilizing luks, zfs and snapshots
+Simple backup utility utilizing luks, zfs and snapshots.
 Must be run as root (sudo)
 
 Dependencies:
@@ -9,7 +9,7 @@ Dependencies:
 
 Basic usage:
 1. Create the zpool: zbackup.sh create <device>
-   Note: device is the entire device, not a partition eg: /dev/sdb not /dev/sdb1
+   Note: device is the entire device, not a partition eg: /dev/sdb not /dev/sdb1.
    This removes any existing partitions, creates a gpt label and one partition using all space on the
    device, minus any needed for alignment. It creates a LUKS-encrypted container in the partition,
    then a zpool named zbackup in it. The root zfs dataset will have compression enabled, and atime
@@ -30,5 +30,6 @@ BIG NOTE: This is a single-drive backup solution. It does not utilize any zfs re
 This is meant to be simple, and for use on portable, external drives.
 
 Lesser note: I use this on Linux Mint, a derivative of Ubuntu, which is a derivative of Debian. Thanks
-to all the developers over the years who have made these amazing distributions. I don't know if it will
-work for you. #itworksforme lol. Give it a try!
+to all the developers over the years who have made these amazing distributions.
+
+I don't know if it will work for you. #itworksforme lol. Give it a try!
