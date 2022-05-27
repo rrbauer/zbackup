@@ -67,6 +67,8 @@ zbackup_create() {
 	parted -s $DEVICE mklabel gpt
 	parted -s $DEVICE mkpart zbackup 0% 100%
 
+	sleep 5
+
 	cryptsetup luksFormat ${DEVICE}1
 	cryptsetup luksOpen ${DEVICE}1 $ZDEV
 	zpool create $ZPOOL /dev/mapper/$ZDEV
